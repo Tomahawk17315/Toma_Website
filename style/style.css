@@ -105,34 +105,12 @@ body {
   font-style: italic;
 }
 
-@media screen and (max-width: 580px) {
-  .landing_page {
-    height: 80vh;
-  }
-  .landing_page .nav_bar {
-    margin: 8vw 4% !important;
-  }
-  .landing_page .nav_bar .nav_bar_items {
-    font-size: 12px !important;
-    margin-right: 1px !important;
-  }
-  .landing_page .title .name {
-    font-size: 15vw;
-  }
-  .landing_page .title .number {
-    font-size: 8vw;
-    margin-top: -8px;
-  }
-  .landing_page .sub_text {
-    font-size: 3.8vw;
-  }
-}
 .header {
   color: #c77415;
   display: flex;
-  height: 40px;
+  height: 2.7vw;
   z-index: 10;
-  padding-top: 50px;
+  padding-top: 2%;
   justify-content: space-between;
   font-family: "bold", sans-serif;
 }
@@ -157,8 +135,11 @@ body {
   font-family: "regular", sans-serif;
   position: relative;
 }
+.about_page .about_div {
+  display: flex;
+  justify-content: space-between;
+}
 .about_page .about_us {
-  margin: 85px 110px;
   margin: 8vh 7vw;
   width: 35vw;
   height: 75%;
@@ -256,6 +237,11 @@ body {
     transform: translate(-100%);
   }
 }
+@keyframes scroll2 {
+  to {
+    transform: translateY(-100%);
+  }
+}
 #worlds {
   border-style: solid;
   -o-border-image: linear-gradient(to right, #004aad, #cb6ce6) 1;
@@ -293,4 +279,72 @@ body {
 }
 .contact_page .contact div:hover {
   transform: scale(1.05);
+}
+
+@media screen and (max-width: 780px) {
+  .landing_page {
+    height: 80vh;
+  }
+  .landing_page .nav_bar {
+    margin: 8vw 4% !important;
+  }
+  .landing_page .nav_bar .nav_bar_items {
+    font-size: 12px !important;
+    margin-right: 1px !important;
+  }
+  .landing_page .title .name {
+    font-size: 15vw;
+  }
+  .landing_page .title .number {
+    font-size: 8vw;
+    margin-top: -8px;
+  }
+  .landing_page .sub_text {
+    font-size: 3.8vw;
+  }
+  .header {
+    padding-top: 4%;
+  }
+  .header .page_heading {
+    font-size: 28px;
+  }
+  #achieve_header .left {
+    width: 20vw;
+  }
+  #achieve_header .right {
+    width: 20vw;
+  }
+  .about_page {
+    height: 70vh;
+  }
+  .about_page .about_div {
+    justify-content: center;
+  }
+  .about_page .about_div .about_img {
+    display: none;
+  }
+  .about_page .about_div .about_us {
+    width: 75%;
+    font-size: 3.2vw;
+  }
+  .bot_page {
+    height: 49vh;
+  }
+  .achievements_page {
+    height: 70vh;
+  }
+  .achievements_page .achievements_div {
+    margin-top: 100px;
+  }
+  .achievements_page .achievements_div .scroller {
+    animation: scroll 40s linear infinite;
+  }
+  .achievements_page .achievements_div .scroller .achievement {
+    min-height: 325px;
+    min-width: 200px;
+    font-size: 14px;
+  }
+  .achievements_page .achievements_div .scroller .achievement img {
+    transform: scale(0.2);
+  }
 }/*# sourceMappingURL=style.css.map */

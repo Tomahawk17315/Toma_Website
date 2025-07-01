@@ -178,45 +178,16 @@ body {
 }
 
 
-@media screen and (max-width: 580px) {
-   
-    .landing_page {
-        height: 80vh;
-        
-        .nav_bar {
-            margin: 8vw 4% !important;
-            .nav_bar_items {
-                font-size: 12px !important;
-                
-                margin-right: 1px !important;
-            }
-        }
-
-        .title .name {
-            font-size: 15vw;
-        }
-        .title .number {
-            font-size: 8vw;
-            margin-top: -8px;
-        }
-
-        .sub_text {
-            font-size: 3.8vw;
-        }
-
-    }
-
-
-} 
-
 
 // header
 .header {
     color: $orange_2;
     display: flex;
-    height: 40px;
+    height: 2.7vw;
+    // height: 40px;
     z-index: 10;
-    padding-top: 50px;
+    // padding-top: 50px;
+    padding-top: 2%;
     justify-content: space-between;
     font-family: "bold", sans-serif;
     .left {
@@ -248,8 +219,12 @@ body {
     font-family: "regular", sans-serif;
     position: relative;
 
+    .about_div {
+        display: flex;
+        justify-content: space-between;
+    }
     .about_us {
-        margin: 85px 110px;
+        // margin: 85px 1   10px;
         margin: 8vh 7vw;
         // background-color: aqua;
         width: 35vw;
@@ -401,6 +376,13 @@ body {
     
 }
 
+@keyframes scroll2 {
+    to {
+        transform: translateY(-100%);
+    }
+    
+}
+
 #worlds {
     border-style: solid;
     border-image: linear-gradient(to right, #004aad, #cb6ce6) 1;
@@ -455,4 +437,123 @@ body {
 
     }
 }
+
+
+
+
+
+
+
+
+
+
+// responsiveness
+
+
+
+@media screen and (max-width: 780px) {
+   
+    .landing_page {
+        height: 80vh;
+        
+        .nav_bar {
+            margin: 8vw 4% !important;
+            .nav_bar_items {
+                font-size: 12px !important;
+                
+                margin-right: 1px !important;
+            }
+        }
+
+        .title .name {
+            font-size: 15vw;
+        }
+        .title .number {
+            font-size: 8vw;
+            margin-top: -8px;
+        }
+
+        .sub_text {
+            font-size: 3.8vw;
+            // margin-bottom: ;
+        }
+
+    }
+
+    .header {
+        padding-top: 4%;
+        .page_heading {font-size: 28px;}
+    }
+
+    #achieve_header {
+        .left {
+            width: 20vw;
+        }
+        .right {
+            width: 20vw;
+        }
+    }
+
+    .about_page {
+
+        height: 70vh;
+        
+        .about_div {
+            justify-content: center;
+
+            .about_img {
+                display: none;
+            }
+
+            .about_us {
+                
+                width: 75%;
+                font-size: 3.2vw;
+            }
+        }
+        
+
+    }
+
+
+    .bot_page {
+        height: 49vh;
+    }
+
+    .achievements_page {
+        height: 70vh;
+        .achievements_div {
+
+            margin-top: 100px;
+            // overflow-y: hidden;
+
+            .scroller {
+                // gap: 0px !important;
+                animation: scroll 40s linear infinite;
+
+
+                .achievement {
+                    
+                        // transform: scaleX(0.95);
+                        // transform: scaleY(0.8);
+                    // transform: scale(0.8);
+                    min-height: 325px;
+                    min-width: 200px;
+                    font-size: 14px;
+
+                    img {
+                        transform: scale(0.2);
+                    }
+                    
+                }
+            }
+        }
+    }
+
+    
+
+
+
+} 
+
 
