@@ -1,0 +1,296 @@
+@font-face {
+  font-family: "regular";
+  src: url("fonts/regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "bold";
+  src: url("fonts/bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  min-width: 100%;
+  overflow-x: hidden;
+}
+
+.landing_page {
+  background: linear-gradient(to bottom, #000000, #061934);
+  height: 100vh;
+  font-family: "regular", sans-serif;
+  z-index: 100;
+}
+.landing_page .nav_bar_div {
+  display: flex;
+  justify-content: center;
+}
+.landing_page .nav_bar_div .nav_bar {
+  background-color: #0d203b;
+  margin: 30px;
+  border-radius: 4px;
+  padding: 12px 0.5vw;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.landing_page .nav_bar_div .nav_bar .nav_bar_items {
+  font-size: 20px;
+  margin: 2.5vw;
+  color: #ff8a00;
+  font-family: inherit;
+  padding: 10px 10px 10px 10px;
+}
+.landing_page .nav_bar_div .nav_bar span {
+  transition: color 0.3s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+.landing_page .nav_bar_div .nav_bar span:hover {
+  cursor: pointer;
+  box-shadow: inset 200px 0 0 0 #c77415;
+  color: #061934;
+}
+.landing_page .title {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20vh;
+}
+.landing_page .title p {
+  font-family: inherit;
+  color: #ff8a00;
+  z-index: 5;
+  margin: 0px;
+}
+.landing_page .title .name {
+  display: flex;
+  justify-content: center;
+  flex-basis: 100%;
+  font-size: 120px;
+}
+.landing_page .title .number {
+  display: flex;
+  justify-content: center;
+  flex-basis: 100%;
+  font-size: 48px;
+  margin-top: -15px;
+}
+.landing_page .toma_axe {
+  min-width: 100vw;
+  min-height: 40vh;
+  position: relative;
+  top: -30vh;
+}
+.landing_page .toma_axe #left_toma_axe {
+  opacity: 20%;
+  position: relative;
+  float: right;
+  height: auto;
+}
+.landing_page .toma_axe #right_toma_axe {
+  opacity: 20%;
+  position: relative;
+  transform: scaleX(-1);
+  height: auto;
+}
+.landing_page .toma_axe img {
+  width: 30vw;
+}
+.landing_page .sub_text {
+  display: flex;
+  justify-content: center;
+  font-size: 19px;
+  margin-top: 10vw;
+  color: #ff8a00;
+  font-style: italic;
+}
+
+@media screen and (max-width: 580px) {
+  .landing_page {
+    height: 80vh;
+  }
+  .landing_page .nav_bar {
+    margin: 8vw 4% !important;
+  }
+  .landing_page .nav_bar .nav_bar_items {
+    font-size: 12px !important;
+    margin-right: 1px !important;
+  }
+  .landing_page .title .name {
+    font-size: 15vw;
+  }
+  .landing_page .title .number {
+    font-size: 8vw;
+    margin-top: -8px;
+  }
+  .landing_page .sub_text {
+    font-size: 3.8vw;
+  }
+}
+.header {
+  color: #c77415;
+  display: flex;
+  height: 40px;
+  z-index: 10;
+  padding-top: 50px;
+  justify-content: space-between;
+  font-family: "bold", sans-serif;
+}
+.header .left {
+  width: 37vw;
+  background-color: #061934;
+}
+.header .page_heading {
+  display: flex;
+  align-items: center;
+  font-size: 2.75vw;
+}
+.header .right {
+  width: 37vw;
+  background-color: #061934;
+  z-index: 10;
+}
+
+.about_page {
+  background: linear-gradient(to bottom, #000000, #061934);
+  height: 90vh;
+  font-family: "regular", sans-serif;
+  position: relative;
+}
+.about_page .about_us {
+  margin: 85px 110px;
+  margin: 8vh 7vw;
+  width: 35vw;
+  height: 75%;
+  overflow: hidden;
+  font-size: 1.35vw;
+  color: #c77415;
+  border-style: solid;
+  -o-border-image: linear-gradient(to bottom, #000000, #061934) 1;
+     border-image: linear-gradient(to bottom, #000000, #061934) 1;
+  border-width: 8px;
+  padding: 0px 25px;
+  line-height: 1.5;
+}
+.about_page .about_img {
+  background-color: aqua;
+  position: absolute;
+  right: 2vw;
+  top: 15vh;
+  width: 40vw;
+  height: 40vw;
+  transform: rotate(-30deg);
+  z-index: 1;
+  -webkit-mask: linear-gradient(0deg, transparent, #061934 100%);
+          mask: linear-gradient(0deg, transparent, #061934 100%);
+}
+
+.bot_page {
+  background: black;
+  height: 100vh;
+  font-family: "regular", sans-serif;
+  position: relative;
+  z-index: 100;
+}
+.bot_page .video_div {
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+}
+.bot_page video {
+  width: 70vw;
+}
+
+.achievements_page {
+  background: linear-gradient(to bottom, #000000, #061934);
+  height: 110vh;
+  font-family: "regular", sans-serif;
+}
+.achievements_page .achievements_div {
+  max-width: 75%;
+  display: flex;
+  justify-content: center;
+  margin: 200px auto;
+}
+.achievements_page .achievements_div .scroller {
+  min-width: 75%;
+  display: flex;
+  justify-content: start;
+  gap: 1%;
+  animation: scroll 110s linear infinite;
+  animation-play-state: paused;
+}
+.achievements_page .achievements_div .scroller .achievement {
+  display: flex;
+  flex-wrap: wrap;
+  background: linear-gradient(to bottom, #f8a400, #de6c00);
+  min-width: 300px;
+  min-height: 48vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 4px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.achievements_page .achievements_div .scroller .achievement .achievement_title {
+  font-family: "bold";
+  font-weight: bold;
+}
+.achievements_page .achievements_div .scroller .achievement img {
+  transform: scale(0.25);
+  position: absolute;
+  bottom: -150px;
+}
+.achievements_page .achievements_div[data-animated=true] {
+  overflow: hidden;
+  -webkit-mask: linear-gradient(90deg, transparent, rgb(189, 115, 19) 25%, rgb(240, 178, 98) 75%, transparent);
+          mask: linear-gradient(90deg, transparent, rgb(189, 115, 19) 25%, rgb(240, 178, 98) 75%, transparent);
+}
+.achievements_div.in_view .scroller {
+  animation-play-state: running;
+}
+
+@keyframes scroll {
+  to {
+    transform: translate(-100%);
+  }
+}
+#worlds {
+  border-style: solid;
+  -o-border-image: linear-gradient(to right, #004aad, #cb6ce6) 1;
+     border-image: linear-gradient(to right, #004aad, #cb6ce6) 1;
+  border-width: 10px;
+}
+
+#centerstage {
+  background-color: #000000;
+  border-style: solid;
+  border-radius: 20px;
+  bottom: -100px;
+  transform: scale(0.2);
+}
+
+.contact_page {
+  background-color: #0d203b;
+  height: 40vh;
+  font-family: "regular", sans-serif;
+}
+.contact_page .contact {
+  padding: 8% 10%;
+  padding-bottom: 0px;
+  max-width: 25%;
+  color: #c77415;
+  font-size: 28px;
+}
+.contact_page .contact div {
+  margin-bottom: 7%;
+  transition: transform 0.3s linear;
+  cursor: pointer;
+}
+.contact_page .contact #sponsor {
+  font-size: 20px;
+}
+.contact_page .contact div:hover {
+  transform: scale(1.05);
+}/*# sourceMappingURL=style.css.map */
