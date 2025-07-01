@@ -303,16 +303,16 @@ body {
     font-size: 3.8vw;
   }
   .header {
-    padding-top: 4%;
+    padding-top: 4% !important;
   }
   .header .page_heading {
-    font-size: 28px;
+    font-size: 28px !important;
   }
   #achieve_header .left {
-    width: 20vw;
+    width: 20vw !important;
   }
   #achieve_header .right {
-    width: 20vw;
+    width: 20vw !important;
   }
   .about_page {
     height: 70vh;
@@ -325,7 +325,7 @@ body {
   }
   .about_page .about_div .about_us {
     width: 75%;
-    font-size: 3.2vw;
+    font-size: 3.1vw;
   }
   .bot_page {
     height: 49vh;
@@ -346,5 +346,8 @@ body {
   }
   .achievements_page .achievements_div .scroller .achievement img {
     transform: scale(0.2);
+  }
+  .achievements_page .achievements_div .scroller .achievement #centerstage {
+    transform: scale(0.15);
   }
 }/*# sourceMappingURL=style.css.map */

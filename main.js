@@ -29,6 +29,13 @@ document.addEventListener("DOMContentLoaded", () => {
         const element = document.querySelector(".contact_page")
         element.scrollIntoView({behavior: "smooth", block: "start"})
     })
+
+
+    const scroller = document.querySelector(".achievements_div")
+    scroller.addEventListener("wheel", (event) => {
+        event.preventDefault()
+        scroller.scrollLeft += event.deltaY
+    })
     
 })
 

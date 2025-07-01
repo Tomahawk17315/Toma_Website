@@ -308,6 +308,7 @@ body {
             gap: 1%;
             animation: scroll 110s linear infinite;
             animation-play-state: paused;
+
         
             .achievement {
                 display: flex;
@@ -351,12 +352,17 @@ body {
 
     }
 
-    .achievements_div[data-animated="true"] {
+    .achievements_div[data-animated="true"]{
         overflow: hidden;
         mask: linear-gradient(90deg, transparent, rgb(189, 115, 19) 25%, rgb(240, 178, 98) 75%, transparent);
 
 
     }
+
+    //  .achievements_div[data-animated="true"]::-webkit-scrollbar{
+    //    display: none;
+
+    // }
 
     .achievements_div[data-animated="true"] .scroller {
         
@@ -481,16 +487,16 @@ body {
     }
 
     .header {
-        padding-top: 4%;
-        .page_heading {font-size: 28px;}
+        padding-top: 4% !important;
+        .page_heading {font-size: 28px !important;}
     }
 
     #achieve_header {
         .left {
-            width: 20vw;
+            width: 20vw !important;
         }
         .right {
-            width: 20vw;
+            width: 20vw !important;
         }
     }
 
@@ -508,7 +514,7 @@ body {
             .about_us {
                 
                 width: 75%;
-                font-size: 3.2vw;
+                font-size: 3.1vw;
             }
         }
         
@@ -543,6 +549,10 @@ body {
 
                     img {
                         transform: scale(0.2);
+                    }
+
+                    #centerstage {
+                        transform: scale(0.15);
                     }
                     
                 }
