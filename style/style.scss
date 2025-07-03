@@ -32,8 +32,8 @@ body {
 
 
 .landing_page {
-    background: linear-gradient(to bottom, $black, $blue_color_1);
-    // background-color: blue;
+    // background: linear-gradient(to bottom, $black, $blue_color_1);
+    background-color: black; 
     height: 100vh;
     font-family: "regular", sans-serif;
     // position: relative;
@@ -44,46 +44,64 @@ body {
         display: flex;
         justify-content: center;
         .nav_bar {
-            background-color: $blue_color_2;
-            margin: 30px;
-            border-radius: 4px;
-            padding: 12px.5vw;
-            // box-shadow: rgba(110, 118, 171, 0.2) 0px 7px 29px 0px;
-            // box-shadow: 7px 7px 10px rgb(192, 26, 26) ;
-            // box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            // background-color: $blue_color_2;
+            display: flex;
+
+            justify-content: space-evenly;
+            align-items: center;
+            
+            margin-top: 2.5%;
+
+            max-height: 7vh;
+
+            border-style: solid;
+            border-color: $orange_1;
+            border-width: 2px;
+            border-radius: 20px;
+
+            
+           
             box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            
+            
             .nav_bar_items {
-                font-size: 20px;
+                font-size: 1em;
                 margin: 2.5vw;
                 color: $orange_1;
                 font-family: inherit;
                 // padding: 0.25% 0.25%;
-                // background-color: aqua;
-                padding: 10px 10px 10px 10px;
+                padding: 10px 10px;
             }
 
-            span {
+            div  {
                 transition: color .3s ease-in-out, box-shadow .5s ease-in-out;
-
             }
 
-            span:hover {
+            div:hover {
                 cursor: pointer;
                 // color: aqua;
-                box-shadow: inset 200px 0 0 0 $orange_2;
+                box-shadow: inset 200px 0 0 0 $orange_4;
                 color: $blue_color_1;
                 // font-family: "bold";
             }
         }
     }
 
+
     .title {
         // background-color: aqua;
+        position: relative;
+        z-index: 100;
         display: flex;
-        justify-content:center;
+        justify-content: start;
         flex-wrap: wrap;
 
-        margin-top: 20vh;
+        // width: fit-content;
+
+        margin-top: 27vh;
+
+        padding: 0 9vw;
+        // padding-left: 9vw;
        
         p {
             font-family: inherit;
@@ -93,87 +111,45 @@ body {
         }
         
         .name {
-            // background-color: black;
+            // background-color: aqua;
             display: flex;
-            justify-content: center;
+            justify-content: start;
             flex-basis: 100%;
 
-            // font-size: 10vw;
-            font-size: 120px;
+            // font-size: 8vw;
+            font-size: clamp(7vw, 8vw, 90px);
         }
 
         .number {
             display: flex;
-            justify-content: center;
+            justify-content: start;
             flex-basis: 100%;
 
             font-size: 48px;
             // font-size: 4vw;
 
             margin-top: -15px;
+            // background-color: aqua;
+            margin-left: 12px;
 
         }
 
        
     }
 
-    .toma_axe {
-        min-width: 100vw;
-        min-height: 40vh;
+    .landing_video {
+
+        position: absolute;
+        z-index: 0;
+        left: 23%;
+        top: 18%;
         
-        position: relative;
-        top: -30vh;
-        // margin: auto auto;
-        
-        
-    
-        // border-style: solid;
-        // border-color: aqua;
-        // z-index: 100;
-
-
-        #left_toma_axe {
-            opacity: 20%;
-            position: relative;
-            float: right;
-            // background-color: #061934;
-            // min-height: 40vh;
-            height: auto;
+        video {
+            width: 100vw;
         }
-
-         #right_toma_axe {
-            opacity: 20%;
-            position: relative;
-            // float: left;
-            transform: scaleX(-1);
-            // background-color: #061934;
-            // min-width: 30%;
-            height: auto;
-
-        }
-
-        img {
-            width: 30vw;
-        }
-       
-
     }
 
-    .sub_text {
-        display: flex;
-        justify-content: center;
-        // position: absolute;
-
-        font-size: 19px;
-        margin-top: 10vw;
-        color: $orange_1;
-
-        // margin-top: 10px;
-
-        font-style: italic;
-
-    }
-
+   
     
 }
 
@@ -183,30 +159,37 @@ body {
 .header {
     color: $orange_2;
     display: flex;
-    height: 2.7vw;
-    // height: 40px;
-    z-index: 10;
-    // padding-top: 50px;
+    height: 5vh;
+    
     padding-top: 2%;
+
     justify-content: space-between;
     font-family: "bold", sans-serif;
+
     .left {
         width: 37vw;
-        background-color: $blue_color_1;
+        border-style: solid;
+        border-width: 2px;
+        border-color: $orange_1;
+        
+        border-left: none;
+        border-radius: 10px;
+
     }
 
     .page_heading {
-        // background-color: #046cff;
-        // text-align: center;
         display: flex;
         align-items: center;
-        font-size: 2.75vw;
+        font-size: 2.75em;
     }
 
     .right {
         width: 37vw;
-        background-color: $blue_color_1;
-        z-index: 10;
+        border-style: solid;
+        border-width: 2px;
+        border-color: $orange_1;
+        border-right: none;
+        border-radius: 10px;
     }
 
 }
@@ -215,7 +198,7 @@ body {
 // about page
 .about_page {
     background: linear-gradient(to bottom, $black, $blue_color_1);
-    height: 90vh;
+    height: 95vh;
     font-family: "regular", sans-serif;
     position: relative;
 
@@ -224,16 +207,14 @@ body {
         justify-content: space-between;
     }
     .about_us {
-        // margin: 85px 1   10px;
-        margin: 8vh 7vw;
-        // background-color: aqua;
-        width: 35vw;
+        margin: 7vh 7vw;
+        width: 40vw;
         height: 75%;
+        
         overflow: hidden;
-        font-size: 1.35vw;
+        font-size: 1.35rem;
         color: $orange_2;
 
-        // fix above responsive
 
         border-style: solid;
         border-image: linear-gradient(to bottom, $black, $blue_color_1) 1;
@@ -262,24 +243,50 @@ body {
 
 
 .bot_page {
-    background: black;
+    background: linear-gradient(to bottom, $blue_color_1, black);
     height: 100vh;
     font-family: "regular", sans-serif;
-    position: relative;
-    z-index: 100;
+    // position: relative;
+    // z-index: 100;
 
     .video_div {
         margin-top: 70px;
         display: flex;
         justify-content: center;
+        // background-color: aqua;
+        // animation: complex 40s linear;
+
+        
+        // .mask {
+        //     // background-color: blue;
+        //     // border: solid blue 1px;
+        //     position: relative;
+        //     overflow: hidden;
+        //     clip-path: circle(50% at 50% 50%);
+        //     // opacity: 10%;
+        // }
     }
 
     video {
-        width: 70vw;
+        width: 85vw;
         // border-style: solid;
-        // border-color: rgb(155, 18, 18);
-    }
+        // border-color: blue;
+        position: relative;
 
+        
+        
+    }
+    
+
+    
+}
+
+@keyframes complex {
+
+    25% {transform: translateX(100px);}
+    50% {transform: translateX(-100px);} 
+    75% {transform: translateX(100px);} 
+    100% {transform: translateX(-100px);} 
     
 }
 
@@ -287,7 +294,7 @@ body {
 
 .achievements_page {
     background: linear-gradient(to bottom, $black, $blue_color_1);
-    height: 110vh;
+    height: 80vh;
     font-family: "regular", sans-serif;
 
 
@@ -296,8 +303,8 @@ body {
         display: flex;
         justify-content: center;
 
-        margin: 200px auto;
-        // background-color: #004aad;
+        margin: 4.5% auto;
+        // background-color: aqua;
         
 
         .scroller {
@@ -308,7 +315,6 @@ body {
             gap: 1%;
             animation: scroll 110s linear infinite;
             animation-play-state: paused;
-
         
             .achievement {
                 display: flex;
@@ -326,10 +332,7 @@ body {
                 border-radius: 4px;
                 
                 box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-                // box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
-                // box-shadow: -3px 1px 1px 10px rgba(222,108,0,0.87);
-
-                // transition: transform 0.3s linear;
+                
 
                 .achievement_title {
                     font-family: "bold";
@@ -337,11 +340,11 @@ body {
                 }
 
                 img {
-                    transform: scale(0.25);
-                    // background-color: aqua;
+                    // transform: scale(0.25);
+                    width: 7vw;
                     position: absolute;
 
-                    bottom: -150px;
+                    bottom: 10%;
                 }
             }
 
@@ -352,17 +355,12 @@ body {
 
     }
 
-    .achievements_div[data-animated="true"]{
+    .achievements_div[data-animated="true"] {
         overflow: hidden;
         mask: linear-gradient(90deg, transparent, rgb(189, 115, 19) 25%, rgb(240, 178, 98) 75%, transparent);
 
 
     }
-
-    //  .achievements_div[data-animated="true"]::-webkit-scrollbar{
-    //    display: none;
-
-    // }
 
     .achievements_div[data-animated="true"] .scroller {
         
@@ -399,10 +397,11 @@ body {
 #centerstage {
     background-color: #000000;
     border-style: solid;
-    border-radius: 20px;
-    bottom: -100px;
+    border-radius: 8px;
+    bottom: 10%;
 
-    transform: scale(0.2);
+    // transform: scale(0.2);
+    width: 10vw;
 }
 
 
@@ -411,159 +410,111 @@ body {
 
 .contact_page {
     background-color: $blue_color_2;
-    height: 40vh;
+    height: 30vh;
     font-family: "regular", sans-serif;
 
     .contact {
 
-        // background-color: aqua;
-        padding: 8% 10%;
-        padding-bottom: 0px;
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: center;
 
-        max-width: 25%;
+       font-size: 1.8rem ;
+       color: $orange_2;
 
-        color: $orange_2;
+       padding-top: 4%;
+       
+       div {
+        flex-basis: 100%;
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+       }
 
-        font-size: 28px;
+       #sponsor {
+        margin-top: 2%;
+        font-size: 1.4vw;
+       }
 
-        div {
-            margin-bottom: 7%;
-            transition: transform 0.3s linear;
-            cursor: pointer;
-        }
-
-        #sponsor {
-            font-size: 20px;
-            // cursor: pointer;
-        }
-
-        div:hover { // better animaiton
-            transform: scale(1.05);
-        }
+       
 
     }
 }
 
 
 
+// -----------------------------IPAD RESPONSIVENESS------------------
+@media screen and (max-width: 1200px) {
 
-
-
-
-
-
-
-// responsiveness
-
-
-
-@media screen and (max-width: 780px) {
-   
     .landing_page {
-        height: 80vh;
-        
-        .nav_bar {
-            margin: 8vw 4% !important;
-            .nav_bar_items {
-                font-size: 12px !important;
-                
-                margin-right: 1px !important;
-            }
+        .nav_bar_items {font-size: 18px !important;}
+        .title {
+            margin-top: 18%;
+            .name {justify-content: center;}
+            .number {justify-content: center; margin-left: 0px;}
         }
 
-        .title .name {
-            font-size: 15vw;
-        }
-        .title .number {
-            font-size: 8vw;
-            margin-top: -8px;
-        }
 
-        .sub_text {
-            font-size: 3.8vw;
-            // margin-bottom: ;
+        .landing_video {
+            
+            left: 0;
+            top: 52%;
+            // border: solid 2px blue;
+            transform: scale(1.4);
+            
         }
-
     }
 
     .header {
-        padding-top: 4% !important;
-        .page_heading {font-size: 28px !important;}
+        padding-top: 4%;
+        
     }
 
     #achieve_header {
-        .left {
-            width: 20vw !important;
-        }
         .right {
-            width: 20vw !important;
-        }
+            width: 25vw;
+        }   
+        .left {width: 25vw;}
     }
 
     .about_page {
 
-        height: 70vh;
-        
+        height: 75vh;
         .about_div {
-            justify-content: center;
-
-            .about_img {
-                display: none;
-            }
 
             .about_us {
-                
-                width: 75%;
-                font-size: 3.1vw;
+                margin: 8vh auto;
+                width: 80vw;
+                text-align: center;
             }
         }
-        
-
-    }
-
-
-    .bot_page {
-        height: 49vh;
     }
 
     .achievements_page {
-        height: 70vh;
+
+        height: 50vh;
         .achievements_div {
-
-            margin-top: 100px;
-            // overflow-y: hidden;
-
+            margin: 9% auto;
             .scroller {
-                // gap: 0px !important;
-                animation: scroll 40s linear infinite;
-
 
                 .achievement {
-                    
-                        // transform: scaleX(0.95);
-                        // transform: scaleY(0.8);
-                    // transform: scale(0.8);
-                    min-height: 325px;
                     min-width: 200px;
-                    font-size: 14px;
+                    min-height: 30vh;
+                    font-size: 15px;
 
-                    img {
-                        transform: scale(0.2);
-                    }
-
-                    #centerstage {
-                        transform: scale(0.15);
-                    }
-                    
+                    img {width: 12vw;}
                 }
             }
         }
-    }
 
+    }
     
 
+    .contact_page {
+        height: 20vh;
+    }
+}
 
 
-} 
 
 

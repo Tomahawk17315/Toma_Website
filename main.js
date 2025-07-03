@@ -36,6 +36,9 @@ document.addEventListener("DOMContentLoaded", () => {
         event.preventDefault()
         scroller.scrollLeft += event.deltaY
     })
+
+
+    // document.querySelector("video").pause()
     
 })
 
