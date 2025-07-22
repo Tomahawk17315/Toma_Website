@@ -38,6 +38,17 @@ body {
     font-family: "regular", sans-serif;
     // position: relative;
     z-index: 100;
+
+
+    .advertisement {
+        
+        background-color: $orange_4;
+        min-height: fit-content;
+        font-size: 20px;
+        padding: .2em;
+        text-align: center;
+        a {text-decoration: none; color: $blue_color_1;}
+    }
     
     .nav_bar_div {
         // background-color: aqua;
@@ -208,15 +219,20 @@ body {
 
     .about_div {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
+        align-items: center;
+        // background-color: orange;
+        height: 90%;
     }
     .about_us {
-        margin: 7vh 7vw;
+        // margin: 7vh 7vw; 
         width: 35vw;
-        height: 75%;
+        height: fit-content;
         
         overflow: hidden;
         font-size: 1.45vw;
+        // font-size: 22px;
+        
         color: $orange_2;
 
 
@@ -229,13 +245,14 @@ body {
     }
 
     .about_img {
-        // background-color: aqua;
-        position: absolute;
-        right: 7vw;
-        top: 22vh;  
+        position: relative;
+        // background-color: $black;
+        // right: 7vw;
+        // top: 22vh;  
         width: 40vw;
-        height: fit-content;
-        // transform: rotate(-30deg);
+        height: auto;
+        display: flex;
+        align-items: center;
         z-index: 0;
         mask: linear-gradient(0deg, transparent, $blue_color_1 100%);
 
@@ -256,15 +273,19 @@ body {
    
 
     .video_div {
-        margin-top: 4.9vw;
+        // margin-top: 4.9vw;
         display: flex;
         justify-content: center;
+        align-items: center;
+        // background-color: black;
+        height: 90%;
        
         
 
         img {
-            width: 50vw;
-            
+            width: 50%;
+            // object-fit:contain;
+            // background-color: graY;
         }
     }
     
@@ -490,18 +511,18 @@ body {
         .left {width: 25vw;}
     }
 
-    .about_page {
+    // .about_page {
 
-        height: 75vh;
-        .about_div {
+    //     height: 75vh;
+    //     .about_div {
 
-            .about_us {
-                margin: 8vh auto;
-                width: 80vw;
-                text-align: center;
-            }
-        }
-    }
+    //         .about_us {
+    //             margin: 8vh auto;
+    //             width: 80vw;
+    //             text-align: center;
+    //         }
+    //     }
+    // }
 
     .achievements_page {
 

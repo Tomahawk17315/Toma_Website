@@ -24,6 +24,18 @@ body {
   font-family: "regular", sans-serif;
   z-index: 100;
 }
+.landing_page .advertisement {
+  background-color: #de6c00;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+  font-size: 20px;
+  padding: 0.2em;
+  text-align: center;
+}
+.landing_page .advertisement a {
+  text-decoration: none;
+  color: #061934;
+}
 .landing_page .nav_bar_div {
   display: flex;
   justify-content: center;
@@ -134,12 +146,14 @@ body {
 }
 .about_page .about_div {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 90%;
 }
 .about_page .about_us {
-  margin: 7vh 7vw;
   width: 35vw;
-  height: 75%;
+  height: -moz-fit-content;
+  height: fit-content;
   overflow: hidden;
   font-size: 1.45vw;
   color: #c77415;
@@ -151,12 +165,11 @@ body {
   line-height: 1.5;
 }
 .about_page .about_img {
-  position: absolute;
-  right: 7vw;
-  top: 22vh;
+  position: relative;
   width: 40vw;
-  height: -moz-fit-content;
-  height: fit-content;
+  height: auto;
+  display: flex;
+  align-items: center;
   z-index: 0;
   -webkit-mask: linear-gradient(0deg, transparent, #061934 100%);
           mask: linear-gradient(0deg, transparent, #061934 100%);
@@ -172,12 +185,13 @@ body {
   font-family: "regular", sans-serif;
 }
 .bot_page .video_div {
-  margin-top: 4.9vw;
   display: flex;
   justify-content: center;
+  align-items: center;
+  height: 90%;
 }
 .bot_page .video_div img {
-  width: 50vw;
+  width: 50%;
 }
 
 @keyframes complex {
@@ -333,14 +347,6 @@ body {
   }
   #achieve_header .left {
     width: 25vw;
-  }
-  .about_page {
-    height: 75vh;
-  }
-  .about_page .about_div .about_us {
-    margin: 8vh auto;
-    width: 80vw;
-    text-align: center;
   }
   .achievements_page {
     height: 50vh;
