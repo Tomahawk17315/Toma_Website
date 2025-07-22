@@ -23,6 +23,7 @@ body {
   height: 100vh;
   font-family: "regular", sans-serif;
   z-index: 100;
+  overflow: hidden;
 }
 .landing_page .advertisement {
   background-color: #de6c00;
