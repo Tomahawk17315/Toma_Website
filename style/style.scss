@@ -47,7 +47,10 @@ body {
         font-size: 20px;
         padding: .2em;
         text-align: center;
-        a {text-decoration: none; color: $blue_color_1;}
+        a {
+            text-decoration: none; 
+            color: $blue_color_1;
+        }
     }
     
     .nav_bar_div {
@@ -272,7 +275,7 @@ body {
     font-family: "regular", sans-serif;
    
 
-    .video_div {
+    .video_div   {
         // margin-top: 4.9vw;
         display: flex;
         justify-content: center;
